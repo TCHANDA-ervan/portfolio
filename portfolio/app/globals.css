@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Personnalisation des styles globaux */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Exemple de police non gérée par Tailwind */
+}
+
+/* Définir des variables CSS dans :root */
+@layer base {
+  :root {
+    --radius: 0.5rem; /* Variable CSS personnalisée */
+  }
+
+  /* Ajouter des styles globaux */
+  body {
+    @apply bg-primary text-white leading-loose; /* Utilisation des classes Tailwind */
+  }
+}
