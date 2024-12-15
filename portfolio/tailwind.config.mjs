@@ -7,6 +7,12 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	screens: {
+        xl: "800px",
+		sm : '640px',
+		md : '768px',
+		lg: '960px',
+      },
   	extend: {
   		colors: {
 			primary : "#1c1c22",
