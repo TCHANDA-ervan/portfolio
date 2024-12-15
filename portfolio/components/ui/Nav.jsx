@@ -14,16 +14,16 @@ const links = [
         path: "/Services",
     },
     {
-        name : "resume",
-        path: "/resume",
+        name : "Resume",
+        path: "/Resume",
     },
     {
-        name : "work",
-        path: "/work",
+        name : "Work",
+        path: "/Work",
     },
     {
-        name : "contact",
-        path: "/contact",
+        name : "Contact",
+        path: "/Contact",
     },
    
 ];
@@ -38,7 +38,7 @@ const Nav = () => {
             key={index}
             className={`${
               link.path === pathname
-                && "text-accent-DEFAULT border-b-2 border-accent-DEFAULT "
+                && "text-green-500 border-b-2 border-accent-DEFAULT "
                 
             } capitalize font-medium hover:text-accent-hover transition-all`}
           >
