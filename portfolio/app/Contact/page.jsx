@@ -73,7 +73,10 @@ const Contact = () => {
                   </SelectGroup>
                 </SelectContent>
               </Select>
-              <textarea className="h-[200px]" placeholder="message." />
+              <textarea 
+  className="h-[200px] w-full bg-primary text-white placeholder-white/60 border border-white/10 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" 
+  placeholder="Message." 
+/>
               <Button size="md" className="max-w-40">
                 send message
               </Button>
