@@ -1,14 +1,14 @@
 "use client"
 
 import{
-  FaHtml5,
+FaHtml5,
  FaCss3,
  FaReact,
  FaFigma,
  FaNodeJs,
-} from "react-icons";
+} from "react-icons/fa";
 
-import{SiTailwindcss , SiNextdojs} from "react-icons/si";
+import{SiTailwindcss , SiNextdotjs} from "react-icons/si";
 
 const about = {
   title : 'About me',
@@ -133,27 +133,27 @@ const skills = {
   description : ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quo, incidunt consequuntur dolore ipsum sit ipsa accusamus assumenda similique odio.',
   skillList: [
     {
-      icon : '<FaHtml5 />',
+      icon : <FaHtml5/>,
       name : "html 5 "
     },
     {
-      icon : '<FaCss3 />',
+      icon : <FaCss3 />,
       name : "html 5 "
     },
     {
-      icon : '<FaJs />',
+      icon : <FaFigma />,
       name : "html 5 "
     },
     {
-      icon : '<FaReact />',
+      icon : <FaReact />,
       name : "html 5 "
     },
     {
-      icon : '<SiNextdotjs />',
+      icon : <SiNextdotjs />,
       name : "html 5 "
     },
     {
-      icon : '<SiTailwindcss />',
+      icon : < FaNodeJs />,
       name : "html 5 "
     },
   ]
@@ -255,18 +255,18 @@ return (
 {skills.description}
 </p>
 </div>
-<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[20px]">
+<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[10px]">
   {skills.skillList.map((skill, index) => (
     <li key={index}>
       <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger className="w-full h-[200px] bg-[#232329] rounded-xl flex justify-center items-center group">
-            <div className="text-2xl group-hover:text-accent transition-all duration-300">
-              {skill.name}
+            <div className="text-2xl group-hover:text-green-500 transition-all duration-300">
+              {skill.icon}
             </div>
           </TooltipTrigger>
           <TooltipContent>
-            <p>{skill.name}</p>
+            <p className="capitalize">{skill.name}</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
@@ -279,8 +279,27 @@ return (
 
 
 {/*Contact*/}
-<TabsContent value="Contact" className="w-full">
-  Contact
+<TabsContent
+value="Contact"
+className="w-full text-center xl:text-left">
+<div className="flex flex-col gap-[30px]">
+<h3 className="text-4xl font-bold">{about.title}</h3>
+<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+{about.description}
+</p>
+<ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px]
+mx-auto xl:mx-0">
+{about.info.map((item, index) => {
+return (
+<li key={index} className="flex items-center justify-center
+xl:justify-start gap-4">
+<span className="text-white/60">{item.fieldName}</span>
+<span className="text-xl">{item.fieldValue}</span>
+</li>
+);
+})}
+</ul>
+</div>
 </TabsContent>
 </div>
 </Tabs>
