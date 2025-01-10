@@ -6,7 +6,7 @@ import{
  FaReact,
  FaFigma,
  FaNodeJs,
-} from "react-icons/fa";
+} from "react-icons";
 
 import{SiTailwindcss , SiNextdojs} from "react-icons/si";
 
@@ -98,7 +98,7 @@ const education = {
   items: [
     {
       institution: "3il ingenieur",
-      degree : "Bachelor",
+      degree : "Management solution digitales et data",
       duration: "2022 - present",
       Formation: "CS2I",
     },
@@ -117,6 +117,12 @@ const education = {
       institution: "3il ingenieur",
       degree : "Bachelor",
       duration: "2022 - present",
+    },
+    {
+      institution: "3il ingenieur",
+      degree : "Bachelor",
+      duration: "2022 - present",
+      Formation: "Mangement des solution digitales et data",
     },
   ]
 };
@@ -225,7 +231,7 @@ return (
 return (
 <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
 <span className="text-green-500">{item.duration}</span>
-<h3 className="text-lg lg:text-xl font-medium max-w-[260px] min-h-[60px] text-center lg:text-left text-gray-400 leading-relaxed">{item.degree}</h3>
+<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:tet-left">{item.degree}</h3>
 <div className="flex items-center gap-3">
 {/*dot*/}
 <span className="w-[6px] h-[6px] rounded-full bg-green-500"></span>
@@ -241,8 +247,34 @@ return (
 
 
 {/*skills*/}
-<TabsContent value="skills" className="w-full">
-  skills
+<TabsContent value="skills" className="w-full h-full">
+<div className="flex flex-col gap-[30px]">
+<div className="flex flex-col gap-[30px] text-center xl:text-left">
+<h3 className="text-4xl font-bold">{skills.title}</h3>
+<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+{skills.description}
+</p>
+</div>
+<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[20px]">
+  {skills.skillList.map((skill, index) => (
+    <li key={index}>
+      <TooltipProvider delayDuration={100}>
+        <Tooltip>
+          <TooltipTrigger className="w-full h-[200px] bg-[#232329] rounded-xl flex justify-center items-center group">
+            <div className="text-2xl group-hover:text-accent transition-all duration-300">
+              {skill.name}
+            </div>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>{skill.name}</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+    </li>
+  ))}
+</ul>
+
+</div>
 </TabsContent>
 
 
