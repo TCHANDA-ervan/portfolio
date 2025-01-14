@@ -25,15 +25,15 @@ const about = {
       },
       {
         fieldName: "Experiences",
-        fieldValue: "5+ Ans"
+        fieldValue: "3+ Ans"
         },
         {
           fieldName: "Langue",
           fieldValue: "Français , Anglais"
           },
         {
-          fieldName: "linkedil",
-          fieldValue: "TCHANDA-Junior"
+          fieldName: "linkedin",
+          fieldValue: "junior-ervan-tchanda-shanda"
           },
           {
             fieldName: "Email",
