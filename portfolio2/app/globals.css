@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Personnalisation des styles globaux */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Exemple de police non gérée par Tailwind */
+}
+
+/* Définir des variables CSS dans :root */
+@layer base {
+  :root {
+    --radius: 0.5rem; /* Variable CSS personnalisée */
+  }
+
+  /* Ajouter des styles globaux */
+  body {
+    @apply bg-primary text-white leading-loose; /* Utilisation des classes Tailwind */
+  }
+  .h1 {
+    @apply text-[30px] xl:text-[50px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[26px] xl:text-[38px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
+}
+
