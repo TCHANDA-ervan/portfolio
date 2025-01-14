@@ -13,30 +13,35 @@ const Home = () => {
         >
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none ">
-            <span className="text-xl">Developpeur fullstack</span>
+            <span className="text-xl">Développeur Fullstack | Data Analyst | Chef de Projet</span>
             <h1 className="h1 mb-6">
               Hello je suis <br />{" "}
               <span className="text-green-500">Junior TCHANDA</span>
             </h1>
             <p className="max-w-[500px] mb-9text-white/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies.
+            Avec une passion pour l'innovation numérique, je combine mes compétences en développement web, analyse de données et gestion de projets pour créer des solutions complètes et stratégiques. Que ce soit pour concevoir des applications intuitives, exploiter des données pour prendre des décisions éclairées, ou coordonner des équipes pour atteindre les objectifs d’un projet, je suis dédié à offrir des résultats de qualité, alliant performance et efficacité.
             </p>
             {/* lien vers d'autre page */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-            <Button
-  variant="outline"
-  size="lg"
-  className="
-    uppercase flex items-center gap-2 
-    border border-accent text-accent 
-    hover:bg-green-500 hover:text-white 
-    transition-all duration-500
-  "
->
-  <span>Download CV</span>
-  <FiDownload className="text-xl" />
-</Button>
+            <a
+      href="portfolio\public\CV_2025-01-14_Junior Ervan_TCHANDA SHANDA.pdf"  // Remplacez ceci par le chemin réel de votre fichier PDF
+      download="CV_TCHANDA_Junior.pdf"  // Nom du fichier téléchargé
+      target="_blank" 
+    >
+      <Button
+        variant="outline"
+        size="lg"
+        className="
+          uppercase flex items-center gap-2
+          border border-accent text-accent
+          hover:bg-green-500 hover:text-white
+          transition-all duration-500
+        "
+      >
+        <span>Download CV</span>
+        <FiDownload className="text-xl" />
+      </Button>
+    </a>
 
               <div className="mb-8 xl:mb-0">
                 <Social

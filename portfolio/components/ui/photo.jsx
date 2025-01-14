@@ -10,7 +10,7 @@ transition: {delay: 2, duration: 0.4, ease: 'easeIn'}}}>
  initial={{opacity: 0}} animate={{opacity: 1,
     transition: {delay: 2.4, duration: 0.4, ease: 'easeInOut'}}}
 
-className="w-[258px] h-[258px] xl:w-[398px] xl:h-
+className="w-[258px] h-[358px] xl:w-[398px] xl:h-
 [398px] mix-blend-lighten absolute">
 <Image
 src="/assets/photo.png"
@@ -29,7 +29,7 @@ className="object-contain"
   viewBox="0 0 506 506"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <motion.circle
+ {/*<motion.circle
     cx="259"
     cy="259" 
     r="250" 
@@ -53,7 +53,7 @@ className="object-contain"
       repeat: Infinity, 
       repeatType:  "reverse",
     }}
-  />
+  />*/} 
 </motion.svg>
 
 

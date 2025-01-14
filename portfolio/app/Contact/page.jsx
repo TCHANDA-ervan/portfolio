@@ -47,17 +47,16 @@ const Contact = () => {
           {/*form*/}
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-green-500">Let's work together</h3>
+              <h3 className="text-4xl text-green-500">Travaillons ensemble</h3>
               <p className="text-white/60">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                nihil sapiente pariatur id totam.
+              Je suis à votre disposition pour mettre mes compétences au service de equipe ,Curieux et déterminé, à apprendre, évoluer et contribuer activement aux projets.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input type="firstname" placeholder="Prenom" />
+                <Input type="lastname" placeholder="Nom" />
+                <Input type="email" placeholder="Email " />
+                <Input type="phone" placeholder="Télephone" />
               </div>
               {/* select */}
               <Select>
@@ -67,19 +66,17 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Designk</SelectItem>
+                    <SelectItem value="est">Developpeur web</SelectItem>
+                    <SelectItem value="cst">Data analyst</SelectItem>
+                    <SelectItem value="mst">Chef projet</SelectItem>
+                    <SelectItem value="msto">FullStack</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
               <textarea 
   className="h-[200px] w-full bg-primary text-white placeholder-white/60 border border-white/10 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" 
-  placeholder="Message." 
+  placeholder="La fonctionnalité d'envoi de message n'est pas activée. Vous pouvez me contacter par e-mail ou m'appeler directement. Merci Cordialement " 
 />
-              <Button size="md" className="max-w-40">
-                send message
-              </Button>
             </form>
           </div>
           {/* info */}

@@ -8,11 +8,12 @@ FaHtml5,
  FaNodeJs,
 } from "react-icons/fa";
 
-import{SiTailwindcss , SiNextdotjs} from "react-icons/si";
+import{SiNextdotjs,SiPhp, SiMysql,  SiAngular } from "react-icons/si";
+import { DiNetmagazine,DiDatabase , DiGithubBadge , DiPython,  DiBootstrap} from "react-icons/di";
 
 const about = {
   title : 'About me',
-  description : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, veritatisquaerat! Ab, harum ipsum! Voluptatibus repellat quibusdam inventore maxime rem.',
+  description : 'Je suis à votre disposition pour mettre mes compétences au service de equipe ,Curieux et déterminé,  à apprendre, évoluer et contribuer activement aux projets',
   info : [
     {
     fieldName: "Name",
@@ -49,43 +50,34 @@ const about = {
 const experience = {
   icon : '',
   title : 'Mon experience',
-  description : ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quo, incidunt consequuntur dolore ipsum sit ipsa accusamus assumenda similique odio.',
+  description : 'Au fil des années, j’ai appris, évolué et monté en compétences dans des domaines clés du développement et de la gestion de projet. Chaque expérience m’a permis de renforcer mes savoir-faire et d’approfondir ma compréhension des enjeux technologiques, me préparant ainsi à relever des défis toujours plus complexes.',
   items: [
     {
-      company: "Tech Solution Inc",
-      Position : "Developpeur Digital",
-      duration: "2022 - present",
+      company: "SDH (Grenoble, France)",
+      Position : "Stage Developpeur Digital",
+      duration: "Sept 2023 - Mars 2024",
     },
     {
-      company: "SDH",
-      Position : "Developpeur ",
-      duration: "2022 - present",
+      company: "SDH (Grenoble, France)",
+      Position : "Alternant Developpeur application",
+      duration: "Sept 2022 - Sept 2023",
     },
     {
-      company: "Tech Solution Inc",
-      Position : "Developpeur Digital",
-      duration: "2022 - present",
+      company: "Projet personel",
+      Position : "Projet BI",
+      duration: "2024",
     },
     {
-      company: "Tech Solution Inc",
-      Position : "Developpeur Digital",
-      duration: "2022 - present",
+      company: "Creative Sarl",
+      Position : "Stage Chef projet",
+      duration: "Mai 2023 - juillet 2023",
     },
     {
-      company: "Tech Solution Inc",
-      Position : "Developpeur Digital",
-      duration: "2022 - present",
-    },
-    {
-      company: "Tech Solution Inc",
-      Position : "Developpeur Digital",
-      duration: "2022 - present",
-    },
-    {
-      company: "Tech Solution Inc",
-      Position : "Developpeur Digital",
-      duration: "2022 - present",
-    },
+      company: "Jumbo",
+      Position : "Stage Dev",
+      duration: "Juin 2022 - Aout 2022",
+    },   
+   
   ]
 };
 
@@ -94,67 +86,89 @@ const experience = {
 const education = {
   icon : '',
   title : 'MES FORMATIONS',
-  description : ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quo, incidunt consequuntur dolore ipsum sit ipsa accusamus assumenda similique odio.',
+  description : ' Un parcours de formation complet, combinant le développement logiciel, la gestion de projet et l’analyse de données, me permettant de concevoir des solutions innovantes et de piloter efficacement des projets techniques.',
   items: [
     {
       institution: "3il ingenieur",
       degree : "Management solution digitales et data",
-      duration: "2022 - present",
-      Formation: "CS2I",
+      duration: "2022 - 2024",
+      Formation: "Master 1 & 2",
     },
     {
-      institution: "3il ingenieur",
-      degree : "Bachelor",
-      duration: "2022 - present",
-      Formation: "Mangement des solution digitales et data",
+      institution: "IUC ",
+      degree : "Conception des Systemes Informatique",
+      duration: "2021 - 2022",
+      Formation: "Bachelor",
     },
     {
-      institution: "3il ingenieur",
-      degree : "Bachelor",
-      duration: "2022 - present",
+      institution: "IUC",
+      degree : "PREPA Ingenieur 3IL",
+      duration: "2019 - 2021",
+      Formation: "Niveau 1 & 2",
     },
     {
-      institution: "3il ingenieur",
-      degree : "Bachelor",
-      duration: "2022 - present",
+      institution: "College CBO",
+      degree : "Baccalaureat scientifique",
+      duration: "2018 - 2019",
+      Formation: "BAC S",
     },
-    {
-      institution: "3il ingenieur",
-      degree : "Bachelor",
-      duration: "2022 - present",
-      Formation: "Mangement des solution digitales et data",
-    },
+    
   ]
 };
 
 // SKILLS
 const skills = {
-  title : 'MES skills',
-  description : ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quo, incidunt consequuntur dolore ipsum sit ipsa accusamus assumenda similique odio.',
+  title: 'MES skills',
+  description: 'Maîtriser des technologies variées et m’adapter aux nouveaux outils sont des atouts qui me permettent de relever des défis techniques avec efficacité. Que ce soit dans le développement web, la gestion de bases de données ou la création d’applications, mes compétences en HTML, CSS, JavaScript, C#, et bien d’autres, sont le socle sur lequel je bâtis des solutions innovantes et performantes',
   skillList: [
     {
-      icon : <FaHtml5/>,
-      name : "html 5 "
+      icon: <FaHtml5 />,
+      name: "HTML5"
     },
     {
-      icon : <FaCss3 />,
-      name : "html 5 "
+      icon: <FaCss3 />,
+      name: "CSS3"
     },
     {
-      icon : <FaFigma />,
-      name : "html 5 "
+      icon: <DiDatabase />,
+      name: "Database"
     },
     {
-      icon : <FaReact />,
-      name : "html 5 "
+      icon: <FaReact />,
+      name: "React"
     },
     {
-      icon : <SiNextdotjs />,
-      name : "html 5 "
+      icon: <SiNextdotjs />,
+      name: "Next.js"
     },
     {
-      icon : < FaNodeJs />,
-      name : "html 5 "
+      icon: <FaNodeJs />,
+      name: "Node.js"
+    },
+   
+    {
+      icon: <SiPhp />,
+      name: "PHP"
+    },
+    {
+      icon: <SiMysql />,
+      name: "SQL"
+    },
+    {
+      icon: <SiAngular />,
+      name: "Angular"
+    },
+    {
+      icon: <  DiNetmagazine />,
+      name: "C#"
+    },
+    {
+      icon: <  DiPython />,
+      name: "Python"
+    },
+    {
+      icon: <  DiGithubBadge />,
+      name: "Git"
     },
   ]
 };
@@ -183,8 +197,8 @@ className="flex flex-col xl:flex-row gap-[60px]">
 <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0
 gap-6">
 <TabsTrigger value="education">Education</TabsTrigger>
-<TabsTrigger value="skills">Skills</TabsTrigger>
 <TabsTrigger value="experience">Experience</TabsTrigger>
+<TabsTrigger value="skills">Skills</TabsTrigger>
 <TabsTrigger value="Contact">About me</TabsTrigger>
 </TabsList>
 
@@ -197,23 +211,21 @@ gap-6">
 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
 {experience.description}
 </p>
-<ScrollArea className="h-[400px]">
-<ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-{experience.items.map((item, index) => {
-return (
-<li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-<span className="text-green-500">{item.duration}</span>
-<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:tet-left">{item.Position}</h3>
-<div className="flex items-center gap-3">
-{/*dot*/}
-<span className="w-[6px] h-[6px] rounded-full bg-green-500"></span>
-<p className="text-white/60">{item.company}</p>
-</div>
-</li>
-);
-})}
-</ul>
+<ScrollArea className="h-[500px]">
+  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+    {experience.items.map((item, index) => (
+      <li key={index} className="bg-[#232329] h-[300px] py-8 px-12 rounded-xl flex flex-col justify-center items-center lg:items-start gap-2">
+        <span className="text-green-500">{item.duration}</span>
+        <h3 className="text-xl max-w-[280px] min-h-[80px] text-center lg:text-left">{item.Position}</h3>
+        <div className="flex items-center gap-3">
+          <span className="w-[6px] h-[6px] rounded-full bg-green-500"></span>
+          <p className="text-lg font-bold text-yellow-400 mt-4 p-2 bg-[#353535] rounded-md">{item.company}</p>
+        </div>
+      </li>
+    ))}
+  </ul>
 </ScrollArea>
+
 </div>
 </TabsContent>
 
@@ -225,22 +237,25 @@ return (
 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
 {education.description}
 </p>
-<ScrollArea className="h-[400px]">
-<ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-{education.items.map((item, index) => {
-return (
-<li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-<span className="text-green-500">{item.duration}</span>
-<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:tet-left">{item.degree}</h3>
-<div className="flex items-center gap-3">
-{/*dot*/}
-<span className="w-[6px] h-[6px] rounded-full bg-green-500"></span>
-<p className="text-white/60">{item.institution}</p>
-</div>
-</li>
-);
-})}
-</ul>
+<ScrollArea className="h-[500px]">
+  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+    {education.items.map((item, index) => (
+      <li key={index} className="bg-[#232329] h-[300px] py-8 px-12 rounded-xl flex flex-col justify-center items-center lg:items-start gap-2">
+        <span className="text-green-500">{item.duration}</span>
+        <h3 className="text-xl max-w-[280px] min-h-[80px] text-center lg:text-left">{item.degree}</h3>
+        <div className="flex items-center gap-3">
+          <span className="w-[6px] h-[6px] rounded-full bg-green-500"></span>
+          <p className="text-white/60">{item.institution}</p>
+        </div>
+        {item.Formation && (
+          <p className="text-lg font-bold text-yellow-400 mt-4 p-2 bg-[#353535] rounded-md">
+            {item.Formation}
+          </p>
+        )}
+        
+      </li>
+    ))}
+  </ul>
 </ScrollArea>
 </div>
 </TabsContent>
