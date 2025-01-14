@@ -34,7 +34,8 @@ const services = [
   title: "Projet BI & Big data",
   description:
     "Création et automatisation de **tableaux de bord interactifs** avec **Tableau** et **Power BI** pour le suivi des **KPI**. Extraction et analyse de données volumineuses à l'aide de **requêtes SQL complexes**. Réalisation d'analyses statistiques et de **modélisation prédictive** pour anticiper les comportements clients. Automatisation de tâches répétitives avec **Python** pour optimiser les processus et améliorer l'efficacité. Collaboration étroite avec les équipes métiers pour garantir l'alignement avec les objectifs stratégiques de l'entreprise.",
-  href: "",
+  href: "https://github.com/TCHANDA-ervan/project",
+  target: "_blank",
 },
 {
   num: "05",
@@ -55,7 +56,8 @@ const services = [
   title: "Développement d'une Plateforme d'Émargement Électronique",
   description: 
     "Réalisation d'un projet individuel dans le cadre d'une Épreuve Certifiante visant à dématérialiser l’émargement des élèves alternants à l'école 3iL via un écosystème applicatif complet. Le projet inclut : une **application mobile** avec authentification sécurisée via **Azure AD**, QR codes dynamiques et géolocalisation pour prévention de la fraude ; une **borne embarquée** sur **Raspberry Pi** pour scanner les QR codes ; une **API REST sécurisée** pour la gestion centralisée des données ; un **tableau de bord web** pour la gestion des émargements et alertes ; un **outil d'administration desktop** pour la supervision du système. Stratégies anti-fraude intégrées, gestion des versions via **Git/GitLab**, et rédaction de tests unitaires et d'intégration. Technologies utilisées : **.NET (C#, ASP.NET Core, Xamarin/MAUI)**.",
-  href: "",
+  href: "https://github.com/TCHANDA-ervan/Pointeuse/",
+  target: "_blank",
 },
 {
   num: "08",
